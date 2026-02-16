@@ -1,0 +1,54 @@
+/* إعدادات الصفحة والخلفية */
+body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#f5efe6; /* خلفية بيج */
+    font-family:Arial, sans-serif;
+}
+
+/* العنوان */
+.title {
+    font-size:36px;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.title .boy {
+    color:#4da6ff; /* أزرق */
+    font-weight:bold;
+}
+
+.title .girl {
+    color:#ff6ec7; /* وردي */
+    font-weight:bold;
+}
+
+/* حاوية الدوائر */
+.circle-container {
+    display:grid;
+    grid-template-columns:repeat(3, 80px); /* 3 دوائر في كل صف */
+    grid-gap:15px; /* المسافة بين الدوائر */
+    justify-content:center; /* لتوسيط الدوائر أفقياً */
+}
+
+/* كل دائرة */
+.scratch {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color:#ccc; /* اللون الافتراضي */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* آخر دائرة مميزة */
+.scratch.last {
+    border:2px dashed #999;
+}
