@@ -1,11 +1,11 @@
-// جنس الجنين لتحديد اللون عند آخر دائرة
+4// جنس الجنين لتحديد اللون عند آخر دائرة
 let realGender = "girl"; // "boy" أو "girl"
 
 // جميع الدوائر
 let circles = document.querySelectorAll(".scratch");
 
 // ترتيب الألوان لبقية الدوائر (8 دوائر أولى)
-let pattern = ["girl","girl","boy","boy","boy","girl","boy","girl"];
+let pattern = ["girl","boy","boy","boy","girl","girl","girl","boy"];
 
 circles.forEach((circle, index) => {
     circle.addEventListener("click", () => {
