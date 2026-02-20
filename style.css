@@ -30,8 +30,8 @@ body {
 /* حاوية الدوائر */
 .circle-container {
     display:grid;
-    grid-template-columns:repeat(3, 220px); /* أكبر */
-    gap:35px; /* مسافة أجمل */
+    grid-template-columns:repeat(3, 120px); /* أكبر */
+    gap:25px; /* مسافة أجمل */
     justify-content:center;
 } 
 
