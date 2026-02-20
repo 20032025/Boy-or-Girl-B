@@ -30,25 +30,37 @@ body {
 /* حاوية الدوائر */
 .circle-container {
     display:grid;
-    grid-template-columns:repeat(3, 80px); /* 3 دوائر في كل صف */
-    grid-gap:15px; /* المسافة بين الدوائر */
-    justify-content:center; /* لتوسيط الدوائر أفقياً */
-}
+    grid-template-columns:repeat(3, 220px); /* أكبر */
+    gap:35px; /* مسافة أجمل */
+    justify-content:center;
+} 
+
+
 
 /* كل دائرة */
 .scratch {
-    width:60px;
-    height:60px;
+    width:120px;
+    height:120px;
     border-radius:50%;
-    background-color:#ccc; /* اللون الافتراضي */
+    background-color:#ccc;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:24px;
     cursor:pointer;
-}
+} 
+
+
 
 /* آخر دائرة مميزة */
 .scratch.last {
     border:2px dashed #999;
 }
+
+
+.circle-container {
+    transform:scale(1);
+}
+
+.scratch {
+    flex-shrink:0;
+} 
