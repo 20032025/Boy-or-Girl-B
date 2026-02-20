@@ -1,11 +1,11 @@
-4// جنس الجنين لتحديد اللون عند آخر دائرة
+// جنس الجنين لتحديد اللون عند آخر دائرة
 let realGender = "boy"; // "boy" أو "girl"
 
 // جميع الدوائر
 let circles = document.querySelectorAll(".scratch");
 
 // ترتيب الألوان لبقية الدوائر (8 دوائر أولى)
-let pattern = ["girl","boy","boy","boy","girl","girl","girl","boy"];
+let pattern = ["girl","girl","boy","boy","boy","girl","boy","girl"];
 
 circles.forEach((circle, index) => {
     circle.addEventListener("click", () => {
@@ -13,7 +13,7 @@ circles.forEach((circle, index) => {
         circle.classList.add("done");
 
         // نعرض صورة البصمة بدل النص
-        circle.innerHTML = '<img src="feet.png" style="width:40px;height:40px;">';
+        circle.innerHTML = '<img src="feet.png" style="width:70px;height:70px;">';
 
         if(index === 8){ // آخر دائرة
             // اللون حسب جنس الجنين
